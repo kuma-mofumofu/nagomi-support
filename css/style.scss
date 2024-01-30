@@ -1,0 +1,39 @@
+/* ===============================================
+# グローバル
+=============================================== */
+@import "global/function"; // 関数
+@import "global/variables";// 変数
+@import "global/mixin";// mixin
+@import "global/animation";// アニメーション
+@import "global/font"; // フォント
+
+
+/* ===============================================
+# ベース
+=============================================== */
+@import "base/body";// 全体のベース
+@import "base/container";
+
+
+/* ===============================================
+# ページ
+=============================================== */
+@import "pages/front";  // フロントページ
+@import "pages/archive";// 投稿一覧（お知らせ一覧）
+@import "pages/single"; // 投稿（お知らせの記事）
+@import "pages/contact";// お問い合わせ
+
+
+/* ===============================================
+# パーツ
+=============================================== */
+@import "parts/header";
+@import "parts/footer";
+@import "parts/hamburger";    // ハンバーガーメニュー
+@import "parts/section_title";// 中見出し
+@import "parts/page_title";   // 下層のページタイトル
+@import "parts/arrow";        // 「詳細はこちら」や「＞」
+@import "parts/btn";          // ボタン
+@import "parts/pager";        // ページャー（投稿一覧のページ送り）
+@import "parts/top";          // 下層ページのtop
+@import "parts/kv";           // トップページのメインビジュアル

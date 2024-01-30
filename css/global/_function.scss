@@ -1,0 +1,28 @@
+/* ===============================================
+# 関数（function = 関数）
+=============================================== */
+///* remの自動計算 ///
+@function rem($px){
+ @return calc($px / 16) * 1rem;
+}
+// ★scssファイルで使用する時★
+// .クラス名{
+// font-size:rem(指定したいpx数);
+// }
+// 例、コンパイル時に14px = 0.875remと自動計算
+
+
+///* カラム計算 ///
+@function column2($num){
+ @return ($num / 2);
+}
+
+@function column3($num){
+ @return ($num / 3);
+}
+
+@function column4($num){
+ @return ($num / 4);
+}
+// 使用例、width:column2(900px);
+// コンパイル結果 width:450px;

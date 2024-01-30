@@ -1,0 +1,73 @@
+@import "function";
+@import "variables";
+/* ===============================================
+# mixin（プロパティや値をセットにしてまとめる）
+=============================================== */
+//todo 「@include mixin名」で呼び出し ///
+// 使用可能文字「半角英数」「-」「カタカナ」「ひらがな」「漢字」
+// 使えないパターン「数字から始まる」「連続ハイフン(--)」「@などの記号」
+
+
+///* ブレイクポイント ///
+@mixin pc-xl(){
+ @media screen and (max-width:2000px) {
+  @content;
+ }
+}
+
+@mixin pc-l(){
+ @media screen and (max-width:1600px) {
+  @content;
+ }
+}
+
+@mixin pc-m(){
+ @media screen and (max-width:1100px) {
+  @content;
+ }
+}
+
+@mixin pc-s(){
+ @media screen and (max-width:1024px) {// タブレット最大サイズ
+  @content;
+ }
+}
+
+@mixin tb-l(){
+ @media screen and (max-width:850px) {
+  @content;
+ }
+}
+
+@mixin tb-m(){
+ @media screen and (max-width:800px) {
+  @content;
+ }
+}
+
+@mixin sp-l(){
+ @media screen and (max-width:650px) {
+  @content;
+ }
+}
+
+@mixin sp(){
+ @media screen and (max-width:550px) {
+  @content;
+ }
+}
+
+@mixin sp-s(){
+ @media screen and (max-width:430px) {
+  @content;
+ }
+}
+
+
+///* positionで中央 ///
+@mixin p-center{
+ position:absolute;
+ top: 50%;
+ left: 50%;
+ transform: translate(-50% , -50%);
+}

@@ -1,0 +1,30 @@
+/* ===============================================
+# 変数（variables = 変数）
+=============================================== */
+///* フォント ///
+// $font-kv:;
+$font-basic:'Zen Kaku Gothic New', sans-serif,'Noto Sans JP', sans-serif,'M PLUS Rounded 1c', sans-serif,'M PLUS 1p', sans-serif,"yu-gothic-pr6n", sans-serif,'Noto Serif JP', serif;
+
+///* フォントサイズ ///
+$fs-normal:rem(16);//基本
+$fs-medium:rem(24);//中見出し
+$fs-large:rem(28);//ページタイトル
+
+ //-------------------------------------------
+ // rootが16pxの場合（htmlはfont-size:100%;）
+ //-------------------------------------------
+ // font-size: .75rem;  /* 12px */
+ // font-size .8125rem; /* 13px */
+ // font-size .875rem;  /* 14px */
+ // font-size 1rem;     /* 16px */
+ // font-size 1.25rem;  /* 20px */
+ // font-size 1.75rem;  /* 28px */
+
+///* 色 ///
+$white:#FFFDF8;
+$black:#584C43;
+$red:#E67662;
+$green:#4CC764;
+$brown:#584C43;
+$brown-hover:#90847b;
+$brown-border:#DBC9AA;
